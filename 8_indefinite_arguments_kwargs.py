@@ -1,9 +1,20 @@
 
 # Indefinite Arguments (**kwargs) Practice #1
 # Create a function called number_attributes that counts the number of parameters that are passed, and returns that number as the result.
+def produce_list(fruit, size, *args, **kwargs):
+    count = 0
+    for key, value in kwargs.items():
+        count += 1
+    return count
+print(produce_list(fruit="apple", size="small", color="red"))
 
 
-
+# def produce_list(**kwargs):
+#     count = 0
+#     for key, value in kwargs.items():
+#         key += kwargs
+#     return count
+# print(produce_list(fruit="apple", size="small", color="red"))
 
 
 
