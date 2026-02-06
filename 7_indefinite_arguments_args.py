@@ -41,3 +41,8 @@ print(absolute_sum(-1, -2, 3))  # Output: 6
 # The function should return the following message:
 
 # "{name}, the sum of your numbers is {sum_numbers}"
+
+def personal_numbers(name, *args):
+    sum_numbers = sum(args)  # Calculate the sum of the numbers in args
+    return f"{name}, the sum of your numbers is {sum_numbers}"
+print(personal_numbers("David", 10, 20, 30))  # Output: "David, the sum of your numbers is 60"
